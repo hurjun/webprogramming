@@ -1,0 +1,24 @@
+#layout1{
+    border: red 10px solid;
+    height: 200px;
+}
+#layout2{
+    border: gray 10px solid;
+    height: 200px;
+}
+#layout3{
+    border: gold 10px solid;
+    height: 200px;
+}
+#layout4{
+    border: MediumSeaGreen 10px solid;
+    height: 200px;
+}
+#layout4-a{
+    border: black 10px solid;
+    height: 180px;
+}
+#layout4-b{
+    border: skyblue 10px solid;
+    height: 180px;
+}
