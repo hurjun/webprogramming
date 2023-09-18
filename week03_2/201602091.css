@@ -1,0 +1,64 @@
+
+th, td {
+    padding: 10px;
+    border: 1px solid;
+}
+td:hover{
+    background-color: pink;
+    align-content: center;
+}
+img {
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    align-content: center;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.rowcell {
+    width: 100px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+#title{
+    text-align: center;
+}
+.element{
+    padding: 20px;
+}
+.entire{
+    margin: 30px;
+    padding: 30px;
+    border:10px solid #dddddd;
+    border-style: dotted;
+}
+.title{
+    text-align: center;
+    font-weight: 500;
+    color: blue;
+    padding: 20px;
+}
+.title2 {
+    text-align: center;
+    font-size: 35px;
+    color: blueviolet;
+}
+hr{
+    background:green;
+    height:5px;
+    border:0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.title3{
+    font-size: 25px;
+    color: cornflowerblue;
+}

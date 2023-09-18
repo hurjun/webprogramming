@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap 5 Example</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="201602091.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="title">2023 웹프로그래밍 강의 소개</div>
+<div class="entire">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 id="title" class="title2"><em>교과목 개요</em></h1>
+            <hr>
+            <div class="col-lg-5 col-md-12 col-sm-12 element">
+                <h1 class="title3"><strong>수업 개요</strong></h1>
+                <p>
+                    본 수업에서는 클라언트 웹 기술인 HTML5, CSS3, JavaScript와 서버 기술인 PHP등 웹 프로그래밍과 관련된 기술을 이해한다.그리고 실습을 통해 웹 사이트 또는 웹
+                    앱을
+                    구축해
+                    봄으로써
+                    최신 웹 표준기술을 습득한다.
+                </p>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 element">
+                <h1 class="title3"><strong>수업운영방식</strong></h1>
+                <ol type="I">
+                    <li>대면 수업으로 함</li>
+                    <li>학교 사이버 캠퍼스를 통한 모든 강의 동영상, 슬라이드, 공지 사항 제공
+                    </li>
+                    <li>Flipped Learing 방식
+                        <ul>
+                            <li>Flipped Learing 방식
+                                이론 수업 전 예습 : 이론 강의 동영상을 통해 예습
+                            </li>
+                            <li>이론 수업 : 그룹 중심의 토론 및 문제 해결</li>
+                            <li>실습 수업 : 개별적으로 실습 과제를 해결</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 element">
+                <h1 class="title2"><em>사용하는 기술 소개</em></h1>
+                <hr>
+                <table style="border: 1px solid">
+                    <tr>
+                        <th rowspan="2" class="rowcell">분류</th>
+                        <th colspan="2">클라이언트 웹기술</th>
+                        <th>서버기술</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td>PHP</td>
+                    </tr>
+                    <tr>
+                        <th class="rowcell">이미지</th>
+                        <td><img src="images/html_logo.png" alt="html.logo"></td>
+                        <td><img src="images/css_logo.png" alt="css.logo"></td>
+                        <td><img src="images/php_logo.png" alt="php.logo"></td>
+                    </tr>
+                    <tr>
+                        <th class="rowcell">관련 문서 링크</th>
+                        <td><a href="https://html.spec.whatwg.org/multipage/">HTML5 메뉴얼</a></td>
+                        <td><a href="https://html.spec.whatwg.org/multipage/">CSS3 스펙</a></td>
+                        <td><a href="https://html.spec.whatwg.org/multipage/">PHP 메뉴얼</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element">
+                <h1 class="title2"><strong>참고 사이트</strong></h1>
+                <hr>
+                <iframe src="https://velog.io/"></iframe>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 element">
+                <h1 class="title2"><strong>선호도 조사</strong></h1>
+                <hr>
+                <form method="post" action="survey.php">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-6">
+                                <label for="select">학년 선택:</label>
+                                <select id="select">
+                                    <option value="1">1학년</option>
+                                    <option value="2">2학년</option>
+                                    <option value="3">3학년</option>
+                                    <option value="4">4학년</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 col-sm-6">
+                                <div>관심있는 분야 (1개 이상) 선택</div>
+                                <input type="radio" name="html" value="html">HTML
+                                <input type="radio" name="css" value="css">css
+                                <input type="radio" name="javascript" value="javascript">javascript
+                                <input type="radio" name="php" value="php">php
+                                <div>
+                                    <input type="reset" value="초기화">
+                                    <input type="submit" value="제출">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
