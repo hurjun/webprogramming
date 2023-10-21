@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="201602091.css">
+</head>
+<body>
+<form action="201602091_2.php" method="post" onsubmit="return validator()">
+  이름: <input type="text">
+  <br>
+  날짜: <input type="date">(예:2023-3-2)
+  <button type="submit">검색</button>
+</form>
+<script>
+  function validator() {
+    if (document.getElementById("name").value.length === 0 || document.getElementById("name").value === Number) {
+      alert("이름에 문자를 입력해주세요");
+      return false;
+    }
+    if (!document.querySelector("input[name='level']:checked")) {
+      alert("고객의 등급을 선택해주세요");
+      return false;
+    }
+    if (!document.getElementById("month").value && !document.getElementById("day")) {
+      alert("날짜에 숫자를 입력해주세요")
+      return false;
+    }
+    let isValidDate = Date.parse('' + document.getElementById('month').value + "/" + document.getElementById('day').value + '/2023');
+    if (isNaN(isValidDate)) {
+      alert('유효한 날짜를 입력해주세요');
+      return false;
+    }
+    if (!document.querySelector("input[name='item']:checked")) {
+      alert("최소 한개의 제품을 입력해야합니다.");
+      return false;
+    }
+  }
+</script>
+</body>
+</html>
