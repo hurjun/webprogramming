@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="201602091.css">
+</head>
+<body>
+<form action="201602091.php" method="post" onsubmit="return validator()">
+    이름: <input id="name" type="text" name="name" required>
+    <br>
+    등급: <input type="radio" name="level">VIP
+    <input type="radio" name="level">GOLD
+    <input type="radio" name="level">ACE
+    <br>
+    주문날짜: <input type="text" name="month" id="month">월 <input type="text" name="day" id="day">일
+    <br>
+    <table>
+        <thead>
+        <tr>
+            <th>선택</th>
+            <th>제품이름</th>
+            <th>가격(원)</th>
+            <th>수량</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="radio" name="item"></td>
+            <td>우유</td>
+            <td>4500</td>
+            <td><input type="number" min="0" max="10" placeholder="0" name="milk"></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="item"></td>
+            <td>만두</td>
+            <td>6900</td>
+            <td><input type="number" min="0" max="10" placeholder="0" name="mandu"></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="item"></td>
+            <td>라면</td>
+            <td>3500</td>
+            <td><input type="number" min="0" max="10" placeholder="0" name="ramen"></td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <button type="submit">저장</button>
+</form>
+<script>
+    function validator() {
+        if (document.getElementById("name").value.length === 0 || document.getElementById("name").value === Number) {
+            alert("이름에 문자를 입력해주세요");
+            return false;
+        }
+        if (!document.querySelector("input[name='level']:checked")) {
+            alert("고객의 등급을 선택해주세요");
+            return false;
+        }
+        if (!document.getElementById("month").value && !document.getElementById("day")) {
+            alert("날짜에 숫자를 입력해주세요")
+            return false;
+        }
+        let isValidDate = Date.parse('' + document.getElementById('month').value + "/" + document.getElementById('day').value + '/2023');
+        if (isNaN(isValidDate)) {
+            alert('유효한 날짜를 입력해주세요');
+            return false;
+        }
+        if (!document.querySelector("input[name='item']:checked")) {
+            alert("최소 한개의 제품을 입력해야합니다.");
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
