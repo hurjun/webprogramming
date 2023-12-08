@@ -1,0 +1,13 @@
+.row{
+    height:100px;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+#div1,#div2 {
+    width: 350px;
+    height: 270px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}

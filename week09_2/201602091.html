@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="201602091.css">
+</head>
+<body>
+<img id="apple" src="image/apple.jpeg" draggable="true" ondragstart="drag(event)">
+<img id="banana" src="image/bannana.jpg" draggable="true" ondragstart="drag(event)">
+<img id="mandarin" src="image/mandarin.jpeg" draggable="true" ondragstart="drag(event)">
+<img id="peach" src="image/peach.jpeg" draggable="true" ondragstart="drag(event)">
+<img id="pear" src="image/pear.jpeg" draggable="true" ondragstart="drag(event)">
+<br>
+<button onclick="read()">Read</button>
+<p>A장바구니</p>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<p>B장바구니</p>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<script src="201602091.js"></script>
+</body>
+</html>
