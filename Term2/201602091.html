@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Helper</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./main.js"></script>
 </head>
 <body>
-$END$
+<header>
+    <h1>수업 녹화하기</h1>
+    <div class="base-line"></div>
+</header>
+<div class="contents">
+    <section class="wrapper">
+        <div class="result"></div>
+        <textarea></textarea>
+        <div class="recognized-textarea">
+            <span class="final" id="final_span"></span>
+            <span class="interim" id="interim_span"></span>
+        </div>
+        <div class="Button-area">
+            <button class="mic"> 녹음 시작
+                <span id="recording-state"></span>
+            </button>
+            <button class="remove"> 리셋 버튼
+            </button>
+            <button class="remove"> 다운로드
+            </button>
+        </div>
+    </section>
+</div>
+
 </body>
+
 </html>
