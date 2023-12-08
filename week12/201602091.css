@@ -1,0 +1,8 @@
+canvas{
+    border: 1px solid #333333;
+}
+video{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
