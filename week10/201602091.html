@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="201602091.css">
 </head>
 <body>
-$END$
+<p>이름: <input type="text" id="name"></p>
+<span id="subjectlist" style="display: flex">
+<div>웹프로그래밍:
+    <input type="number" id="1">
+</div>
+<div>IT영어:
+    <input type="number" id="2">
+</div>
+<div>창업실습:
+    <input type="number" id="3">
+</div>
+</span>
+<button id="add">저장</button>
+<p>과목추가: <input type="text" id="subject"></p>
+<button id="create">생성</button>
+<br>
+<button id="delete">추가과목삭제</button>
+<p>이름: <input type="text" id="findname">
+    <button id="find">검색</button>
+</p>
+<table id="table">
+    <tr>
+        <th>학생이름</th>
+        <th>웹프로그래밍</th>
+        <th>IT영어</th>
+        <th>창업실습</th>
+        <th>합계</th>
+    </tr>
+</table>
+<script src="201602091.js"></script>
 </body>
 </html>
